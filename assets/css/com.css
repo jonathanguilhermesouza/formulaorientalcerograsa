@@ -249,10 +249,10 @@ tr {
       padding: 0 15px; 
       white-space: normal; 
       font-size: 25px;
-      color: #ffffff; 
+      color: #000; 
       font-family: Oswald; 
       font-weight: bold; 
-      text-shadow: #000000 0px 1px 0px;
+      /*text-shadow: #000000 0px 1px 0px;*/
       text-decoration: none;
     }
     .span-btn2 {
@@ -266,9 +266,9 @@ tr {
       z-index: 1; 
       margin: .2em 0 -.5em; 
       font-size: 15px; 
-      color: #f5e051; 
+      color: red; 
       font-family: Cabin; 
       font-weight: bold; 
       font-style: italic;
-      text-shadow: #000000 0px 1px 0px;
+      /*text-shadow: #000000 0px 1px 0px;*/
     }
