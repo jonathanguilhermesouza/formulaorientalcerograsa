@@ -85,10 +85,24 @@
         else if (searchKeyWordUrl == 'v7') {
           $('.vsl-content-v7').show();
         }
-      } 
-      else
-      {
+      }
+      else {
         $('.vsl-content-v5').show();
+      }
+
+      let iframeVsl = getIframeVsl(searchKeyWordUrl);
+      $('#content-iframe-vls').html(iframeVsl);
+    }
+    function getIframeVsl(version) {
+
+      if(version == 'v5') {
+        return '<iframe class="vsl-content-v5" id="panda-3b5617ac-5483-41dc-8cd4-0ca3894b825f" src="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/?v=3b5617ac-5483-41dc-8cd4-0ca3894b825f" style="border:none;position:absolute;top:0;left:0" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" allowfullscreen=true width="100%" height="100%"></iframe>';
+      }
+      else if(version == 'v6') {
+        return '<iframe class="vsl-content-v6" id="panda-a97cd280-2587-49f0-9492-71a7310267dc" src="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/?v=a97cd280-2587-49f0-9492-71a7310267dc" style="border:none;position:absolute;top:0;left:0" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" allowfullscreen=true width="100%" height="100%"></iframe>';
+      }
+      else if(version == 'v7') {
+        return '<iframe class="vsl-content-v7" id="panda-a84b328f-cbce-46ae-9090-2bbf94f9949c" src="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/?v=a84b328f-cbce-46ae-9090-2bbf94f9949c" style="border:none;position:absolute;top:0;left:0;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" allowfullscreen=true  width="100%" height="100%"></iframe>';
       }
     }
   </script>
@@ -98,7 +112,7 @@
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
         n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
       if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
       n.queue = []; t = b.createElement(e); t.async = !0;
@@ -115,40 +129,52 @@
 
   <!--V5-->
   <link rel="preload" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/css/styles.css" as="style">
-<link rel="prerender" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/?v=3b5617ac-5483-41dc-8cd4-0ca3894b825f">
-<link rel="preload" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/js/hls.js" as="script">
-<link rel="preload" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/js/plyr.polyfilled.min.js" as="script">
-<link rel="preload" href="https://config.tv.pandavideo.com.br/vz-7dbce0f8-14c/3b5617ac-5483-41dc-8cd4-0ca3894b825f.json" as="fetch">
-<link rel="preload" href="https://config.tv.pandavideo.com.br/vz-7dbce0f8-14c/config.json" as="fetch">
-<link rel="preload" href="https://b-vz-7dbce0f8-14c.tv.pandavideo.com.br/3b5617ac-5483-41dc-8cd4-0ca3894b825f/playlist.m3u8" as="fetch">
-<link rel="dns-prefetch" href="https://b-vz-7dbce0f8-14c.tv.pandavideo.com.br">
-<link rel="dns-prefetch" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br">
-<link rel="dns-prefetch" href="https://vz-7dbce0f8-14c.b-cdn.net">
-
-<!--v6-->
-  <link rel="preload" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/css/styles.css" as="style">
-  <link rel="prerender" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/?v=a97cd280-2587-49f0-9492-71a7310267dc">
+  <link rel="prerender"
+    href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/?v=3b5617ac-5483-41dc-8cd4-0ca3894b825f">
   <link rel="preload" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/js/hls.js" as="script">
-  <link rel="preload" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/js/plyr.polyfilled.min.js" as="script">
-  <link rel="preload" href="https://config.tv.pandavideo.com.br/vz-7dbce0f8-14c/a97cd280-2587-49f0-9492-71a7310267dc.json" as="fetch">
+  <link rel="preload" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/js/plyr.polyfilled.min.js"
+    as="script">
+  <link rel="preload"
+    href="https://config.tv.pandavideo.com.br/vz-7dbce0f8-14c/3b5617ac-5483-41dc-8cd4-0ca3894b825f.json" as="fetch">
   <link rel="preload" href="https://config.tv.pandavideo.com.br/vz-7dbce0f8-14c/config.json" as="fetch">
-  <link rel="preload" href="https://b-vz-7dbce0f8-14c.tv.pandavideo.com.br/a97cd280-2587-49f0-9492-71a7310267dc/playlist.m3u8" as="fetch">
+  <link rel="preload"
+    href="https://b-vz-7dbce0f8-14c.tv.pandavideo.com.br/3b5617ac-5483-41dc-8cd4-0ca3894b825f/playlist.m3u8" as="fetch">
+  <link rel="dns-prefetch" href="https://b-vz-7dbce0f8-14c.tv.pandavideo.com.br">
+  <link rel="dns-prefetch" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br">
+  <link rel="dns-prefetch" href="https://vz-7dbce0f8-14c.b-cdn.net">
+
+  <!--v6-->
+  <link rel="preload" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/css/styles.css" as="style">
+  <link rel="prerender"
+    href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/?v=a97cd280-2587-49f0-9492-71a7310267dc">
+  <link rel="preload" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/js/hls.js" as="script">
+  <link rel="preload" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/js/plyr.polyfilled.min.js"
+    as="script">
+  <link rel="preload"
+    href="https://config.tv.pandavideo.com.br/vz-7dbce0f8-14c/a97cd280-2587-49f0-9492-71a7310267dc.json" as="fetch">
+  <link rel="preload" href="https://config.tv.pandavideo.com.br/vz-7dbce0f8-14c/config.json" as="fetch">
+  <link rel="preload"
+    href="https://b-vz-7dbce0f8-14c.tv.pandavideo.com.br/a97cd280-2587-49f0-9492-71a7310267dc/playlist.m3u8" as="fetch">
   <link rel="dns-prefetch" href="https://b-vz-7dbce0f8-14c.tv.pandavideo.com.br">
   <link rel="dns-prefetch" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br">
   <link rel="dns-prefetch" href="https://vz-7dbce0f8-14c.b-cdn.net">
 
 
-<!--v7-->
-<link rel="preload" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/css/styles.css" as="style">
-<link rel="prerender" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/?v=a84b328f-cbce-46ae-9090-2bbf94f9949c">
-<link rel="preload" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/js/hls.js" as="script">
-<link rel="preload" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/js/plyr.polyfilled.min.js" as="script">
-<link rel="preload" href="https://config.tv.pandavideo.com.br/vz-7dbce0f8-14c/a84b328f-cbce-46ae-9090-2bbf94f9949c.json" as="fetch">
-<link rel="preload" href="https://config.tv.pandavideo.com.br/vz-7dbce0f8-14c/config.json" as="fetch">
-<link rel="preload" href="https://b-vz-7dbce0f8-14c.tv.pandavideo.com.br/a84b328f-cbce-46ae-9090-2bbf94f9949c/playlist.m3u8" as="fetch">
-<link rel="dns-prefetch" href="https://b-vz-7dbce0f8-14c.tv.pandavideo.com.br">
-<link rel="dns-prefetch" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br">
-<link rel="dns-prefetch" href="https://vz-7dbce0f8-14c.b-cdn.net">
+  <!--v7-->
+  <link rel="preload" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/css/styles.css" as="style">
+  <link rel="prerender"
+    href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/?v=a84b328f-cbce-46ae-9090-2bbf94f9949c">
+  <link rel="preload" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/js/hls.js" as="script">
+  <link rel="preload" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/js/plyr.polyfilled.min.js"
+    as="script">
+  <link rel="preload"
+    href="https://config.tv.pandavideo.com.br/vz-7dbce0f8-14c/a84b328f-cbce-46ae-9090-2bbf94f9949c.json" as="fetch">
+  <link rel="preload" href="https://config.tv.pandavideo.com.br/vz-7dbce0f8-14c/config.json" as="fetch">
+  <link rel="preload"
+    href="https://b-vz-7dbce0f8-14c.tv.pandavideo.com.br/a84b328f-cbce-46ae-9090-2bbf94f9949c/playlist.m3u8" as="fetch">
+  <link rel="dns-prefetch" href="https://b-vz-7dbce0f8-14c.tv.pandavideo.com.br">
+  <link rel="dns-prefetch" href="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br">
+  <link rel="dns-prefetch" href="https://vz-7dbce0f8-14c.b-cdn.net">
 
 </head>
 
@@ -163,39 +189,26 @@
 
           <!-- Headline -->
           <div class="vsl-content-v5" style="display: none;">
-            <h3 class="my-4"><b>MÉDICO JAPONÉS REVELA <span style="display: block; color:red">FÓRMULA ORIENTAL</span> QUE
-              TRABAJA EN LA CÉLULA CENTRAL QUE ELIMINA LA GRASA ACUMULADA..</b></h3>
+            <h3 class="my-4"><b>MÉDICO JAPONÉS REVELA <span style="display: block; color:red">FÓRMULA ORIENTAL</span>
+                QUE
+                TRABAJA EN LA CÉLULA CENTRAL QUE ELIMINA LA GRASA ACUMULADA..</b></h3>
           </div>
 
           <div class="vsl-content-v6" style="display: none;">
             <h3 class="my-4"><b>EL <span style="display: block; color:red">TRUCO DEL TÉ </span> PARA
-              PÉRDIDA DE GRASA..</b></h3>
+                PÉRDIDA DE GRASA..</b></h3>
           </div>
 
           <div class="vsl-content-v7" style="display: none;">
             <h3 class="my-4"><b>JAPONESES <span style="display: block; color:red">DESVELAN LA FLOR</span> QUE
-              TRANSFORMA SU CUERPO..</b></h3>
+                TRANSFORMA SU CUERPO..</b></h3>
           </div>
-          
+
           <!-- VSL -->
           <!--<script type="text/javascript" id="scr_62279575aa8f7e00086fa73e">var s=document.createElement("script");s.src="https://cdn.converteai.net/ccdae62e-116b-492f-9648-160a0c5bfcc3/players/62279575aa8f7e00086fa73e/player.js",s.async=!0,document.head.appendChild(s);</script>-->
           <div style="position:relative;padding-top:56.25%;">
-            
-            <iframe class="vsl-content-v5" id="panda-3b5617ac-5483-41dc-8cd4-0ca3894b825f" src="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/?v=3b5617ac-5483-41dc-8cd4-0ca3894b825f"
-            style="border:none;position:absolute;top:0;left:0;display: none;"
-            allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" allowfullscreen=true
-            width="100%" height="100%"></iframe>
-            
-            <iframe class="vsl-content-v6" id="panda-a97cd280-2587-49f0-9492-71a7310267dc" src="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/?v=a97cd280-2587-49f0-9492-71a7310267dc"
-              style="border:none;position:absolute;top:0;left:0;display: none;"
-              allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" allowfullscreen=true
-              width="100%" height="100%"></iframe>
-
-              <iframe class="vsl-content-v7" id="panda-a84b328f-cbce-46ae-9090-2bbf94f9949c" src="https://player-vz-7dbce0f8-14c.tv.pandavideo.com.br/embed/?v=a84b328f-cbce-46ae-9090-2bbf94f9949c"
-              style="border:none;position:absolute;top:0;left:0;display: none;"
-              allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" allowfullscreen=true
-              width="100%" height="100%"></iframe>
-
+            <div id="content-iframe-vls">
+            </div>
           </div>
 
           <!-- Botão 1 -->
