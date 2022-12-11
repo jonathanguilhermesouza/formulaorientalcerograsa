@@ -132,9 +132,11 @@ tr {
 
 .fb-comments-comment-actions likes {
   font-size: 13px;
-  background: url(https://cloudcode.site/likes.png);
-  background-repeat: no-repeat;
-  padding-left: 43px;
+  background: url(https://img.imageboss.me/atm/cdn/p/h.png) 5px 2px, url(https://img.imageboss.me/atm/cdn/p/l.png) 5px 2px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, left center;
+  background-size: 20px 20px;
+  padding-left: 49px;
   padding-right: 6px;
   padding-top: 3px;
   padding-bottom: 2px;
